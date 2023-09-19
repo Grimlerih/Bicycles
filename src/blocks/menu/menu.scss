@@ -1,0 +1,14 @@
+@import '../../scss/common/font.scss';
+
+@mixin list($property) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: $property;
+}
+
+.menu{
+  @include list(399px);
+  font-family: "Inter-Medium" , sans-serif;
+  align-items: center;
+}
