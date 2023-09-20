@@ -1,5 +1,10 @@
-@import './common/reset.scss';
+@import "./common/font";
+@import "./common/reset";
+@import "./common/mixins";
 
-@import '../blocks/page/page.scss';
-@import '../blocks/header/header.scss';
-@import '../blocks/menu/menu.scss';
+@import "../scss/components/bike-name";
+@import "../scss/components/header";
+@import "../scss/components/intro-section";
+@import "../scss/components/intro";
+@import "../scss/components/menu";
+@import "../scss/components/page";
