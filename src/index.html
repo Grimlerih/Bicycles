@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bicycle</title>
     <link href="./scss/style.scss" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="body">
     <div class="page">
       <header class="header">
         <nav class="nav">
@@ -22,10 +28,11 @@
       <section class="intro-section">
         <div class="intro">
           <div class="intro__container">
-            <h1 class="intro__title">Шоссе, ТТ и Грэвел</h1>
+            <h1 class="intro__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
             <p class="intro__subtitle">
-              Триатлонные старты, горные серпантины или грейвел заезды по
-              живописным маршрутам – нужно только определиться с выбором
+              Триатлонные старты, горные серпантины или<br />
+              грейвел заезды по живописным маршрутам - <br />
+              нужно только определиться с выбором <br />
               велосипеда и отправиться в путь.
             </p>
             <button class="intro__button">Подробнее</button>
@@ -37,11 +44,19 @@
           </div>
         </div>
 
-        <div class="intro-section__bike-img">
-          <img src="" alt="" />
+        <div class="intro-section__bike-container">
+          <img
+            class="intro-section__bike-img"
+            src="./image/intro_bike.png"
+            alt="велосипед"
+          />
         </div>
 
-        <img src="" alt="" class="intro-section__nature-img" />
+        <img
+          class="intro-section__nature-img"
+          src="./image/intro_nature.png"
+          alt="природа"
+        />
       </section>
     </div>
   </body>

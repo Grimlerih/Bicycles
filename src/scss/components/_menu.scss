@@ -1,16 +1,13 @@
-@import "../../scss/common/font.scss";
-
-@mixin list() {
+%list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .menu {
-  @include list();
-  font-family: "Inter-Medium", sans-serif;
+  @extend %list;
   align-items: center;
-  font-size: 14px;
+  @include font-parametr(500, 14px, 18px, #151515);
 }
 
 .nav {

@@ -1,0 +1,16 @@
+.bike-name {
+  margin: 0 0 209px 0;
+  display: flex;
+  align-items: center;
+
+  &__title {
+    @include font-parametr(400, 18px, 18px, #151515);
+  }
+
+  &__line {
+    width: 132px;
+    height: 2px;
+    background: #d7d4d4;
+    margin-left: 30px;
+  }
+}
