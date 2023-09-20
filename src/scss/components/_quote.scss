@@ -1,0 +1,26 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 470px;
+
+  &__title {
+    @include font-parametr(600, 34px, 44px, #151515);
+    letter-spacing: -0.5px;
+  }
+
+  &__box {
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    @include font-parametr(500, 20px, 32px, #151515);
+  }
+
+  &__profession {
+    @include font-parametr(400, 16px, 28px, #222);
+    opacity: 0.7;
+  }
+}
