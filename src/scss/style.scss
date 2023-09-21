@@ -1,6 +1,7 @@
 @import "./common/fonts";
 @import "./common/reset";
 @import "./common/mixins";
+@import "../scss/common/variables";
 
 @import "../scss/components/bike-name";
 @import "../scss/components/header";
@@ -11,3 +12,5 @@
 @import "../scss/components/body";
 @import "../scss/components/quote-section";
 @import "../scss/components/quote";
+@import "../scss/components/roads-section";
+@import "../scss/components/roads";

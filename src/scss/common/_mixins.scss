@@ -6,3 +6,13 @@
   line-height: $height;
   color: $color;
 }
+
+@mixin display($display: block, $flexDir: row, $justCont: flex-start) {
+  display: $display;
+  flex-direction: $flexDir;
+  justify-content: $justCont;
+}
+
+.hidden {
+  display: none;
+}

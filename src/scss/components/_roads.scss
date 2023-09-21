@@ -1,0 +1,78 @@
+.roads {
+  @include display(flex, column, space-between);
+  margin: 60px 0 60px 120px;
+
+  &__info {
+    @include display(flex, null, null);
+  }
+
+  &__box {
+    @include display(flex, column, null);
+    width: 460px;
+  }
+
+  &__title {
+    @include font-parametr(700, 55px, 60px, $title-black);
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    @include font-parametr(400, 18px, 28px, $subtitle-black);
+    opacity: 0.7;
+  }
+
+  &__img {
+    @include display(flex, row, null);
+    margin: 80px 0 50px 0;
+    gap: 40px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  &__vector {
+    position: absolute;
+    bottom: 16px;
+    width: 98px;
+    flex-shrink: 0;
+    height: 40px;
+    background-image: url(../../image/roads_bg.svg);
+
+    &_grevel {
+      margin: 23.5px 0 0 16px;
+    }
+
+    &_tt {
+      margin: 28px 0 0 16px;
+    }
+
+    &_highway {
+      margin: 12px 0 0 16px;
+    }
+  }
+
+  &__btns {
+    @include display(flex, row, space-between);
+    gap: 20px;
+    width: 120px;
+
+    &_left,
+    &_right {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-color: $roads-btn-bg;
+      background-image: url(../../image/btn_vector_left.svg);
+      transition: filter 0.5s linear;
+      &:hover {
+        filter: brightness(85%);
+      }
+    }
+
+    &_right {
+      background-image: url(../../image/btn_vector_right.svg);
+    }
+  }
+}

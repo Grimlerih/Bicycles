@@ -1,7 +1,5 @@
 .intro-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include display(flex, row, space-between);
   position: relative;
 
   &__nature-img {
@@ -20,7 +18,7 @@
     width: 440px;
     height: 300px;
     padding: 20px 50px;
-    background-color: #f4f4f4;
+    background-color: $bg;
     filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.44));
     top: 130px;
     margin: 0;

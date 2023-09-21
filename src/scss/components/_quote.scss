@@ -1,11 +1,9 @@
 .quote {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include display(flex, column, space-between);
   width: 470px;
 
   &__title {
-    @include font-parametr(600, 34px, 44px, #151515);
+    @include font-parametr(600, 34px, 44px, $title-black);
     letter-spacing: -0.5px;
   }
 
@@ -16,11 +14,11 @@
   }
 
   &__name {
-    @include font-parametr(500, 20px, 32px, #151515);
+    @include font-parametr(500, 20px, 32px, $title-black);
   }
 
   &__profession {
-    @include font-parametr(400, 16px, 28px, #222);
+    @include font-parametr(400, 16px, 28px, $subtitle-black);
     opacity: 0.7;
   }
 }
