@@ -1,0 +1,24 @@
+.workout {
+  @include display(flex, column, space-between);
+  max-width: 460px;
+  margin: 0 0 0 120px;
+
+  &__container {
+    @include display(flex, column, space-between);
+  }
+  &__title {
+    @include font-parametr(700, 55px, 60px, $title-black);
+    margin-bottom: 50px;
+  }
+
+  &__subtitle {
+    @include font-parametr(400, 18px, 28px, $subtitle-black);
+    opacity: 0.7;
+  }
+
+  &__links {
+    @include font-parametr(600, 18px, 28px, $title-black);
+    display: flex;
+    gap: 30px;
+  }
+}

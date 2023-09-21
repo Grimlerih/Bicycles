@@ -9,8 +9,6 @@ var currentIndex = 0;
 const swtchInfo = (operator) => {
   if (roadsInfo[currentIndex]) {
     roadsInfo[currentIndex].classList.add("hidden");
-  } else if (currentIndex === 1) {
-    currentIndex = 2;
   }
 
   if (operator === "plus") {

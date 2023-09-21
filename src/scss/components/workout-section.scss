@@ -1,0 +1,4 @@
+.workout-section {
+  @include display(flex, none, space-between);
+  margin: 150px 0 120px 0;
+}
