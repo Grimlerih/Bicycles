@@ -1,0 +1,5 @@
+.bycicle-section {
+  @include display(flex, column, space-between);
+  padding: 60px 0 60px 120px;
+  gap: 120px;
+}

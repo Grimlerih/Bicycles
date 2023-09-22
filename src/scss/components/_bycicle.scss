@@ -1,0 +1,18 @@
+.bycicle {
+  @include display(flex, row, space-between);
+
+  &__title {
+    @include font-parametr(700, 55px, 60px, $title-black);
+  }
+
+  &__type {
+    @include font-parametr(400, 18px, 28px, $subtitle-black);
+    @include display(flex, row, space-between);
+    opacity: 0.7;
+    gap: 40px;
+    align-items: center;
+    &_active {
+      @include font-parametr(600, 18px, 28px, $title-black);
+    }
+  }
+}

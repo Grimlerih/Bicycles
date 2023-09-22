@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
   </head>
+
   <body class="body">
     <div class="page">
       <header class="header">
@@ -134,6 +135,108 @@
         </div>
       </section>
 
+      <section class="bycicle-section">
+        <div class="bycicle">
+          <h2 class="bycicle__title">Велосипеды</h2>
+          <ul class="bycicle__type">
+            <li>
+              <button class="bycicle__type_highway bycicle__type_active">
+                Шоссе
+              </button>
+            </li>
+            <li><button class="bycicle__type_grevel">Грэвел</button></li>
+            <li><button class="bycicle__type_tt">TT</button></li>
+          </ul>
+        </div>
+
+        <div class="bycicle-list">
+          <div class="bycicle-list__highway-box">
+            <ul class="bycicle-list__highway">
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bicycle_high_caledonia.png"
+                  alt="caledonia"
+                />
+                <p class="bycicle-list__name">Cervelo Caledonia-5</p>
+              </li>
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bicycle_high_himod.png"
+                  alt="himod"
+                />
+                <p class="bycicle-list__name">Cannondale Systemsix Himod</p>
+              </li>
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bicycle_high_sl-7.png"
+                  alt="sl-7"
+                />
+                <p class="bycicle-list__name">Trek Domane SL-7</p>
+              </li>
+            </ul>
+          </div>
+          <div class="bycicle-list__grevel-box">
+            <ul class="bycicle-list__grevel hidden">
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bycicle_grevel_810.png"
+                  alt="810"
+                />
+                <p class="bycicle-list__name">Cervelo Aspero GRX 810</p>
+              </li>
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bycicle_grevel_diverge.png"
+                  alt="diverge"
+                />
+                <p class="bycicle-list__name">Specialized S-Works Diverge</p>
+              </li>
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bycicle_grevel_lefty.png"
+                  alt="lefty 3"
+                />
+                <p class="bycicle-list__name">Cannondale Topstone Lefty 3</p>
+              </li>
+            </ul>
+          </div>
+          <div class="bycicle-list__tt-box">
+            <ul class="bycicle-list__tt hidden">
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bycicle_tt_s-works.png"
+                  alt="s-works"
+                />
+                <p class="bycicle-list__name">Specialized S-Works Shiv</p>
+              </li>
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bycicle_tt_01 one.png"
+                  alt="01 one"
+                />
+                <p class="bycicle-list__name">BMC Timemachine 01 ONE</p>
+              </li>
+              <li>
+                <img
+                  class="bycicle-list__img"
+                  src="./image/bycicle_tt_p-series.png"
+                  alt="p-series"
+                />
+                <p class="bycicle-list__name">Cervelo P-Series</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="workout-section">
         <div class="workout">
           <div class="workout__container">
@@ -154,5 +257,6 @@
       </section>
     </div>
     <script type="module" src="./srpits/roads.js"></script>
+    <script type="module" src="./srpits/bycicle.js"></script>
   </body>
 </html>

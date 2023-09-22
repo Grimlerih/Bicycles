@@ -1,0 +1,39 @@
+.bycicle-list {
+  @include display(flex, row, space-between);
+
+  &__highway {
+    @include display(flex, row, space-between);
+    width: 1320px;
+  }
+
+  &__grevel {
+    @include display(flex, row, space-between);
+    width: 1320px;
+  }
+
+  &__tt {
+    @include display(flex, row, space-between);
+    width: 1320px;
+  }
+
+  &__img {
+    margin: 0;
+    padding: 20px;
+    width: 340px;
+    height: 340px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    box-sizing: content-box;
+    transition: 0.1s ease-out;
+    transition: box-shadow 0.5s linear;
+    &:hover {
+      box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+  }
+
+  &__name {
+    @include font-parametr(600, 18px, 22px, $title-black);
+    margin-top: 22px;
+  }
+}
