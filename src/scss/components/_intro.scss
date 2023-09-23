@@ -26,16 +26,31 @@
   }
 
   &__button {
+    position: relative;
+    @include font-parametr(600, 14px, 18px, #ffffff);
+    background-color: #24b47e;
+    border-radius: 4px;
     width: 180px;
     height: 50px;
-    background-color: #24b47e;
-    @include font-parametr(600, 14px, 18px, #ffffff);
-    letter-spacing: 1px;
-    border-radius: 4px;
-    transition: filter 0.5s linear;
+    z-index: 1;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      background-color: #319e75;
+      width: 0;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: width 0.5s ease-in-out;
+    }
 
     &:hover {
-      filter: brightness(85%);
+      &::before {
+        width: 100%;
+      }
     }
   }
 }

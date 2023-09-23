@@ -74,10 +74,7 @@
       background-position: 50%;
       background-color: $roads-btn-bg;
       background-image: url(../../image/btn_vector_left.svg);
-      transition: filter 0.5s linear;
-      &:hover {
-        filter: brightness(85%);
-      }
+      @extend %hoverEffect;
     }
 
     &_right {
