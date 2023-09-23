@@ -1,0 +1,60 @@
+.footer {
+  @include display(flex, row, space-between);
+  padding: 80px 0 60px 120px;
+
+  &__container {
+    @include display(flex, column, null);
+  }
+
+  &__title {
+    @include font-parametr(600, 24px, 32px, $title-black);
+  }
+
+  &__subtitle {
+    @include font-parametr(600, 14px, 19.587px, #cfcfcf);
+  }
+
+  &__input {
+    border-radius: 4px;
+    border: 1px solid rgba(199, 199, 199, 0.5);
+    width: 360px;
+    height: 50px;
+    flex-shrink: 0;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.5s linear;
+    padding-left: 20px;
+
+    &::placeholder {
+      @include font-parametr(500, 13px, 27.982px, $title-black);
+    }
+
+    &:focus {
+      opacity: 1;
+    }
+  }
+  &__input-button {
+    @include font-parametr(500, 13px, 27.982px, $title-black);
+    visibility: hidden;
+    width: 16px;
+    height: fit-content;
+    right: 22px;
+    position: absolute;
+    transition: transform 0.3s;
+
+    &_visible {
+      visibility: visible;
+    }
+
+    &:active {
+      transform: scale(1.1);
+    }
+  }
+
+  &__input-container {
+    margin: 50px 0 100px;
+    position: relative;
+    align-items: center;
+    @include display(flex, row, null);
+  }
+}
