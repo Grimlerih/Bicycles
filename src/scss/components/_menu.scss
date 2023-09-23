@@ -8,6 +8,14 @@
   @extend %list;
   align-items: center;
   @include font-parametr(500, 14px, 18px, #151515);
+
+  li {
+    transition: opacity 0.3s linear;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 }
 
 .nav {
