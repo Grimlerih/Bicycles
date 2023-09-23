@@ -10,3 +10,10 @@ footerInput.addEventListener("input", function () {
 footerInputBtn.addEventListener("click", function () {
   footerInput.value = "Круто!";
 });
+
+// переключение темы
+const switchToogle = document.querySelector(".switch__toogle");
+
+switchToogle.addEventListener("click", function () {
+  this.classList.toggle("switch__toogle_active");
+});
